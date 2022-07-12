@@ -1,0 +1,25 @@
+.logo{
+    fill: #ff5b00;
+}
+
+.cover-bg{
+    width: 100%;
+    height: 260px;
+    background: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_640,,/v1649128912/banner/kjhfi9fqffjc9cewajkg.jpg) 50% 50%/120%  no-repeat ;
+}
+
+.searchBar{
+    margin: 10px auto;
+    width: 100%;
+    height: 36px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+
+}
+
+.search {
+    /* border: #0004ff 1px solid; */
+
+}
+
