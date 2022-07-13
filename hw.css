@@ -2,10 +2,19 @@
     fill: #ff5b00;
 }
 
+.container{
+    max-width: 1200px;
+    /* border: #da7c4a 1px solid; */
+}
+
 .cover-bg{
     width: 100%;
-    height: 260px;
-    background: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_640,,/v1649128912/banner/kjhfi9fqffjc9cewajkg.jpg) 50% 50%/120%  no-repeat ;
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.225)), url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_640,,/v1649128912/banner/kjhfi9fqffjc9cewajkg.jpg) 50% 50%/120%  no-repeat ;
+}
+
+@media screen {
+    
 }
 
 .searchBar{
@@ -15,7 +24,15 @@
     border-radius: 50px;
     background-color: white;
     display: flex;
+}
 
+.nav .searchBar{
+    margin: 10px auto;
+    width: 50%;
+    height: 36px;
+    border-radius: 50px;
+    background-color: rgb(243, 239, 239);
+    display: flex;
 }
 
 .search {
@@ -23,3 +40,33 @@
 
 }
 
+.short{
+    width: 5px;
+    height: 5px;
+    background-color:rgb(198, 198, 198) ;
+    border-radius: 8px;
+}
+
+.long{
+    width: 20px;
+    height: 5px;
+    background-color:rgb(255, 255, 255) ;
+    border-radius: 8px;
+}
+
+li{
+    margin:0 12px;
+    align-items: center;
+}
+
+.profileImg-wrap{
+    width: 30px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin:0 0px;
+
+}
+
+li img{
+    width: 100%;
+}
