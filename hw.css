@@ -1,20 +1,31 @@
+body{
+    background-color: #f5f5f5;
+}
+
+@media screen and (min-width: 576px) {
+    body{
+        background-color: #fff;
+    }
+}
+
 .logo{
     fill: #ff5b00;
 }
 
 .container{
     max-width: 1200px;
-    /* border: #da7c4a 1px solid; */
 }
 
 .cover-bg{
     width: 100%;
     height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.225)), url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_640,,/v1649128912/banner/kjhfi9fqffjc9cewajkg.jpg) 50% 50%/120%  no-repeat ;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.225)), url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_640,,/v1649128912/banner/kjhfi9fqffjc9cewajkg.jpg) 50% 50%/cover  no-repeat ;
 }
 
-@media screen {
-    
+.cover-md-bg{
+    width: 100%;
+    height: 480px;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.4) 1%,rgba(255, 255, 255, 0)15%,rgba(255, 255, 255, 0)85%,rgba(0, 0, 0, 0.4) 100%), url(https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1650872771/banner/bkxv5zzqmccyoupu8vx1.webp) center center / cover no-repeat ;
 }
 
 .searchBar{
@@ -35,11 +46,6 @@
     display: flex;
 }
 
-.search {
-    /* border: #0004ff 1px solid; */
-
-}
-
 .short{
     width: 5px;
     height: 5px;
@@ -54,7 +60,7 @@
     border-radius: 8px;
 }
 
-li{
+.nav li{
     margin:0 12px;
     align-items: center;
 }
@@ -67,6 +73,223 @@ li{
 
 }
 
-li img{
+.nav li img{
     width: 100%;
 }
+
+.category li{
+    margin:10px;
+    font-size: 0.9rem;
+}
+
+.category a{
+    color: rgb(79, 79, 79);
+}
+
+.fa-location-dot{
+    color: rgb(79, 79, 79);
+}
+
+.pineapple{
+    width: 24px;
+    height: 24px;
+}
+
+.fa-angle-left{
+    font-size: 3rem;
+    color: white;
+    line-height: 480px;
+}
+
+.middleSlide{
+    width: calc(100% - 300px);
+}
+.middleinner{
+    width: 80%;
+}
+
+.middleSlide h1{
+    font-size: 4rem;
+}
+
+.middleSlide p{
+    font-size: 1.25rem;
+}
+
+.md-searchBar{
+    background-color: #fff;
+    width: 70%;
+    height: 56px;
+    border-radius: 10px;
+}
+
+.md-searchBar svg{
+    color: rgb(79, 79, 79);
+}
+
+.md-searchBar a{
+    background-color: #ff5b00;
+    padding: 12px 40px;
+    margin-right: 4px;
+    border-radius: 8px;
+}
+
+.fa-angle-right{
+    font-size: 3rem;
+    color: white;
+    line-height: 480px;
+}
+
+.leftSlide{
+    width: 150px;
+    /* border: #da7c4a 1px solid; */
+}
+
+.rightSlide{
+    width: 150px;
+    /* border: #da7c4a 1px solid; */
+}
+
+.roundblock{
+    margin-top: -9px;
+    width: 100%;
+    height: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px 8px 0 0;
+}
+@media screen and (min-width: 576px) {
+    .roundblock{
+        background-color: #fff;
+    }
+}
+
+.col-3{
+    padding: 0;
+}
+
+.swiperCardimg{
+    width: 44px;
+    height: 44px;
+    margin: auto;
+}
+
+.tag{
+    width: 42px;
+    right: -15px;
+    top:-5px;
+}
+
+.dot1{
+    width: 6px;
+    height: 6px;
+    background-color: rgb(191, 191, 191);
+    border-radius: 10px;
+}
+
+.dot2{
+    width: 6px;
+    height: 6px;
+    background-color:#ff5b00;
+    border-radius: 10px;
+}
+
+.campaignWrap{
+    width: 300px;
+    border-radius: 8px;
+}
+
+.campaign .row2{
+    flex-wrap: nowrap;
+    /* border: #ff5b00 solid 1px; */
+
+}
+
+.recent .row2{
+    flex-wrap: nowrap;
+    /* border: #ff5b00 solid 1px; */
+}
+
+.recentCard .price .small::before{
+    display: inline-block;
+    content: 'NT$ ';
+}
+
+.recentCard .small{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.recentCard{
+    width: 95px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hot .row2{
+    flex-wrap: nowrap;
+    /* border: #ff5b00 solid 1px; */
+}
+
+.hot .col{
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 42%;
+}
+
+.hotWrap{
+    height: 56px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* .row{
+    border: #ff5b00 solid 1px;
+} */
+
+.local .col-6{
+    max-width: 48%;
+    border-radius: 12px;
+}
+
+.local .price::before{
+    content: 'NT$';
+}
+
+.local .price::after{
+    content: '起';
+    font-size: 0.5rem;
+    font-weight: 400;
+}
+
+.star{
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(255, 151, 53);
+    font-weight: 500;
+    margin-right: 4px;
+}
+.star-amout{
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(255, 151, 53);
+    font-weight: 500;
+}
+
+.review::before{
+    content: '(';
+}
+.review::after{
+    content: ')';
+}
+
+.review{
+    font-size: 8px;
+    line-height: 16px;
+    color: rgb(153, 153, 153);
+    max-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
